@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Icon, Box, Button, Balance, Details } from "../UI";
+import { Icon, Box, Button, Balance, Details, IconTheme } from "../UI";
 
 import privado from "../../assets/images/privado.svg";
 import olho_icone from "../../assets/images/olho.svg";
@@ -23,7 +23,7 @@ const Conta = () => {
       <Balance style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
         < Details>
-          <Icon src={dinheiro} alt="Ícone Saldo" />
+          <IconTheme src={dinheiro} alt="Ícone Saldo" />
         </ Details>
         {toggleState ? (
           <Balance>
